@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff200"
+    tools:context="com.example.khfy6tme.runningtracker.StatsActivity"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:id="@+id/allStat">
+    <ImageView
+        android:id="@+id/filterBtn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="Filter"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:tint="#FF2222"
+        android:src="@drawable/filter"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/todayStats">
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#FF2222"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:text="Today"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:background="#FF2222">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/todayDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Total Duration"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/todayDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Total Distance"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/todayAvgSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Average Speed"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/todayHighSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Highest Speed"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/todayDurationVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="00:00:00"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/todayDistanceVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="0.00"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/todayAvgSpeedVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="0.00"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/todayHighSpeedVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="0.00"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/thisWeekStats">
+        <TextView
+            android:id="@+id/week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FF2222"
+            android:gravity="center_horizontal"
+            android:text="This Week"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FF2222">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/weekDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Total Duration"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/weekDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Total Distance"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/weekAvgSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Average Speed"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/weekHighSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Highest Speed"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="right">
+                <TextView
+                    android:id="@+id/weekDurationVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="00:00:00"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/weekDistanceVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/weekAvgSpeedVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/weekHighSpeedVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/monthStat">
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FF2222"
+            android:gravity="center_horizontal"
+            android:text="This Month"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FF2222">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/monthDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Total Duration"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/monthDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Total Distance"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/monthAvgSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Average Speed"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/monthHighSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Highest Speed"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="right">
+                <TextView
+                    android:id="@+id/monthDurationVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="00:00:00"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/monthDistanceVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/monthAvgSpeedVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/monthHighSpeedVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/allTimeStats">
+        <TextView
+            android:id="@+id/allTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FF2222"
+            android:gravity="center_horizontal"
+            android:text="All Time"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FF2222">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/totalDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Total Duration"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/totalDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Total Distance"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/totalAvgSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Average Speed"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/totalHighSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Highest Speed"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="right">
+                <TextView
+                    android:id="@+id/totalDurationVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="00:00:00"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/totalDistanceVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/totalAvgSpeedVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/totalHighSpeedVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

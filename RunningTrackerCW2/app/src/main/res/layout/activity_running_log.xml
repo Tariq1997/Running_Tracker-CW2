@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff200"
+    tools:context="com.example.khfy6tme.runningtracker.MainActivity">
+
+    <TextView
+        android:id="@+id/sortTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Sorted By "
+        android:textAllCaps="true"
+        android:textColor="#FF2222"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/sortBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/sort_descending"
+        android:tint="#FF2222"/>
+
+    <ListView
+        android:id="@+id/runLogListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/sortBtn">
+
+
+    </ListView>
+
+</RelativeLayout>
